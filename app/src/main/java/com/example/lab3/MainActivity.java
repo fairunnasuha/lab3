@@ -40,7 +40,7 @@ public class MainActivity extends AppCompatActivity {
     //access Database
     protected Cursor cursor;
     //use polymorphism toaccess DataHelper
-    DataHelper dbcenter;
+    com.example.lab3_offline_database_suhairil.DataHelper dbcenter;
     //to access class CreateBio, UpdateBio, and ViewBio
     public static MainActivity ma;
 
@@ -66,7 +66,7 @@ public class MainActivity extends AppCompatActivity {
         });
 
         ma = this;
-        dbcenter = new DataHelper(this);
+        dbcenter = new com.example.lab3_offline_database_suhairil.DataHelper(this);
         RefreshList();
     }
 
@@ -123,7 +123,7 @@ public class MainActivity extends AppCompatActivity {
                     public void onClick(DialogInterface dialog, int item) {
                         switch (item) {
                             case 0:
-                                Intent i = new Intent(getApplicationContext(), ViewBiodataActivity.class);
+                                Intent i = new Intent(getApplicationContext(),ViewBiodataActivity.class);
                                 i.putExtra("name", selection);
                                 startActivity(i);
                                 break;

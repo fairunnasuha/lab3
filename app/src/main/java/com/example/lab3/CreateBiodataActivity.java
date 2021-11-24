@@ -10,6 +10,8 @@ import android.widget.Button;
 import android.widget.EditText;
 import android.widget.Toast;
 
+import com.example.lab3_offline_database_suhairil.DataHelper;
+
 public class CreateBiodataActivity extends AppCompatActivity {
 
     protected Cursor cursor;
@@ -53,4 +55,3 @@ public class CreateBiodataActivity extends AppCompatActivity {
 
     }
 }
-

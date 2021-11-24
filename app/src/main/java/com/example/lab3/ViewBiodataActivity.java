@@ -12,7 +12,7 @@ import android.widget.TextView;
 public class ViewBiodataActivity extends AppCompatActivity {
 
     protected Cursor cursor;
-    DataHelper dbHelper;
+    com.example.lab3_offline_database_suhairil.DataHelper dbHelper;
     Button ton2;
     TextView text1, text2, text3, text4, text5;
 
@@ -21,7 +21,7 @@ public class ViewBiodataActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_view_biodata);
 
-        dbHelper = new DataHelper(this);
+        dbHelper = new com.example.lab3_offline_database_suhairil.DataHelper(this);
         text1 = (TextView) findViewById(R.id.textView1);
         text2 = (TextView) findViewById(R.id.textView2);
         text3 = (TextView) findViewById(R.id.textView3);

@@ -1,4 +1,4 @@
-package com.example.lab3;
+package com.example.lab3_offline_database_suhairil;
 
 import android.content.Context;
 import android.database.sqlite.SQLiteDatabase;

@@ -14,7 +14,7 @@ import android.widget.Toast;
 public class UpdateBiodataActivity extends AppCompatActivity {
 
     protected Cursor cursor;
-    DataHelper dbHelper;
+    com.example.lab3_offline_database_suhairil.DataHelper dbHelper;
     Button ton1, ton2;
     EditText text2, text3, text4, text5;
     TextView text1;
@@ -24,7 +24,7 @@ public class UpdateBiodataActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_update_biodata);
 
-        dbHelper = new DataHelper(this);
+        dbHelper = new com.example.lab3_offline_database_suhairil.DataHelper(this);
         text1 = (TextView) findViewById(R.id.editText1);
         text2 = (EditText) findViewById(R.id.editText2);
         text3 = (EditText) findViewById(R.id.editText3);
